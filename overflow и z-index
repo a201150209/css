@@ -1,0 +1,57 @@
+Столкнулся сегодня с тем, что z-index не хотел применяться к элементу с position: relative, который находился в контейнере с owerflow
+
+решил вопрос примерно так
+
+.wrap {
+  position: relative;
+  margin: 100px;
+  owerflow-y: scroll;
+  display: flex;
+  flex-direction: column;
+	height: 100px;
+}
+.carusel__item {
+    background-color: #ff0;
+    height: 100px;
+    width: 100px;
+    display: inline-block;
+}
+.carusel__item-tooltip {
+    display: block;
+    left: 10em;
+    position: absolute;
+}
+
+<div class="wrap">
+	<div class="carusel">
+	<div class="carusel__item">
+		lalala
+		<div class="carusel__item-tooltip">tooltip!!</div>
+	</div>
+	</div>
+	<div class="carusel">
+	<div class="carusel__item">
+		lalala
+		<div class="carusel__item-tooltip">tooltip!!</div>
+	</div>
+	</div>
+	<div class="carusel">
+	<div class="carusel__item">
+		lalala
+		<div class="carusel__item-tooltip">tooltip!!</div>
+	</div>
+	</div>
+	<div class="carusel">
+	<div class="carusel__item">
+		lalala
+		<div class="carusel__item-tooltip">tooltip!!</div>
+	</div>
+	</div>
+	<div class="carusel">
+	<div class="carusel__item">
+		lalala
+		<div class="carusel__item-tooltip">tooltip!!</div>
+	</div>
+	</div>
+</div>
+
